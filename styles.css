@@ -1,0 +1,64 @@
+
+body {
+    background-color: #FFF0F5;}
+p {
+    color: #BA55D3;}
+h2 {
+    color: #DA70D6;}
+
+
+
+
+
+
+
+
+
+/*GRID LAYOUT FLUID */
+body {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:"header header"
+                        "intro faq"
+                        "articles faq"
+                        "footer footer";
+    grid-column-gap: 0px;
+    }
+body > header {
+    grid-row: 1;
+    grid-column: 1/-1;
+    }
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > section {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+section {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    }
+section > h1 {
+    grid-area: 1/1/2/3;
+    }
+
+/* STYLED NAVIGATION */
+nav.horizontalNavigation {
+    text-align: left;
+}
+
+nav.horizontalNavigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.horizontalNavigation li {
+    display: inline-block;
+    width: 20%;
+}
+
+nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+}
