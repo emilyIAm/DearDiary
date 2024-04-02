@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFF0F5;
+  color: #BA55D3;
+}
+
+header {
+  text-align: center;
+  grid-column: 1 / span 2; 
+}
+
+.horizontalNavigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.horizontalNavigation li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.horizontalNavigation a {
+  text-decoration: none;
+  color: #BA55D3;
+}
+
+.horizontalNavigation a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+}
+
+h2 {
+  color: #BA55D3;
+  grid-column: 1;
+}
+
+h3 {
+  color: #BA55D3;
+  text-align: center;
+  grid-column: 2;
+}
