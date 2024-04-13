@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dear Diary</title>
   <link rel="stylesheet" href="styles2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -12,12 +15,14 @@
 
 <nav class = "horizontalNavigation">
     <ul>
-        <li><a href="jackOfAllTraits.html">Ch. 1</a></li>
-        <li><a href="planning.html">Ch. 2</a></li>
-        <li><a href="lovelyThings.html">Ch. 3</a></li>
+        <li><a href="jackOfAllTraits.html">Interests</a></li>
+        <li><a href="planning.html">Implementation</a></li>
+        <li><a href="lovelyThings.html">Appreciation</a></li>
     </ul>
 </nav>
 </header>
+<div class="container">
+    <div class="left-column">
 
 <h2>Dear Diary, do you know anything about me?</h2>
 <p>As of today, I am a 19 year old computer science major. This is my diary site where I get
@@ -26,8 +31,10 @@ to share my goals, projects,and progress to the world! Documentation is very imp
   mark my existence. Please make yourself at home and browse the chapters of my life made available. I talk
     about my hobbies, how they have inspired me to have my current goals with creating something, what steps
      i am taking to make some progress there, and just things I plain like that inspire me. Thank you!</p>
-<h3>Who are you?</h3>
+</div>
+<div class="right-column">
 <form>
+<p>WHO ARE YOU?</p>
   <label for="name">Name: </label><br>
   <input type="text" id="name" name="name"><br>
   <label for="age">Age: </label><br>
@@ -36,7 +43,7 @@ to share my goals, projects,and progress to the world! Documentation is very imp
   <input type="text" id="zodiac" name="zodiac"><br>
   <label for="color">Favorite color: </label><br>
   <input type="text" id="color" name="color"><br>
-  <label for="feeling">Who are you today?: </label><br>
+  <label for="feeling">Today you are, </label><br>
   <select id="feeling" name="feeling"><br>
     <option value="awesome">awesome</option>
     <option value="good">good</option>
@@ -48,9 +55,11 @@ to share my goals, projects,and progress to the world! Documentation is very imp
   </select><br>
   <input type="submit" value="Submit">
   <input type="reset" value="Reset">
-
-  
 </form>
+</div>
+</div>
+
+
 <footer><h4>Gallery</h4>
 <p>Pottery on the wheel in progress</p>
   <img src="pottery.jpg" alt="pottery making">
@@ -58,5 +67,6 @@ to share my goals, projects,and progress to the world! Documentation is very imp
   <img src="cat.jpg" alt="cat">
   <p>more to come!</p>
 </footer>
+
 </body>
 </html>
